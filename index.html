@@ -776,7 +776,6 @@
       border-color: var(--primary);
     }
 
-    /* XAI Viewer - Real X-rays */
     .xai-viewer {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1317,7 +1316,7 @@
 
     <div id="view-xai" class="view-section">
       <div class="card">
-        <div class="card-title">Diagnostic Interpretability Viewer (Real X-Ray Dataset)</div>
+        <div class="card-title">Image Interpretability Viewer</div>
         <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">
           Inference ID: #INF-8842-A | Patient Context: 45M, clinical indication: persistent cough | Predicted: Pneumonia
           (89% Conf)
@@ -1468,7 +1467,7 @@
         </table>
 
         <div class="feedback-section">
-          <h4>Log Override Reason (Clinician Feedback)</h4>
+          <h4> Log Override Reason</h4>
           <select onchange="showFeedbackFields(this)">
             <option value="">Select a reason...</option>
             <option value="fp-sensitivity">False Positive - Model too sensitive</option>
@@ -1488,7 +1487,6 @@
   </main>
 
   <script>
-    // Debounced resize handler
     let resizeTimeout;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimeout);
